@@ -1,0 +1,40 @@
+.navigation-component {
+    padding-left: 10px;
+}
+
+.navigation-component .action {
+    color: var(--dark);
+    font-size: 18px;
+    text-decoration: none;
+    transform: translateX(0);
+
+    transition: transform 200ms linear;
+}
+
+.navigation-component > .item.-active .action {
+    display: block;
+    transform: translateX(12px)
+}
+
+.navigation-component > .item {
+    position: relative;
+}
+
+.navigation-component > .item::before {
+    content: '';
+    /* w5+h5 */
+    display: inline-block;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid var(--primary);
+    position: absolute;
+    top: 2px;
+
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.navigation-component > .item.-active::before {
+    opacity: 1;
+}

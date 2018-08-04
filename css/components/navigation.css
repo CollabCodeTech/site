@@ -1,15 +1,4 @@
-.header {
-    padding: 15px 10px 12px 10px; 
-    text-align: center;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
-}
-
-.logo {
-    width: 160px;
-    margin-bottom: 18px;
-}
-
-.link {
+.navigation > .action {
     display: inline-block;
     font-size: 15.5px;
     text-transform: uppercase;
@@ -18,11 +7,11 @@
     text-decoration: none;
 }
 
-.link:not(:last-of-type) {
+.navigation > .action:not(:last-of-type) {
     margin-right: 13px;
 }
 
-.link::after {
+.navigation > .action::after {
     content: '';
     display: block;
     width: 100%;
@@ -34,14 +23,10 @@
     transition: transform 200ms linear;
 }
 
-.link:hover::after {
-    transform: scaleX(1)
+.navigation > .action:hover::after {
+    transform: scaleX(1);
 }
 
-
-
-
-
-
-
-
+.navigation > .action.-active::after {
+    transform: scaleX(1);
+}

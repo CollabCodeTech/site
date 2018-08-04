@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -9,21 +9,34 @@
         <link rel="stylesheet" href="css/reset.css">
 
         <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/spaces.css">
+
         <link rel="stylesheet" href="css/base.css">
 
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/navigation.css">
+        <link rel="stylesheet" href="css/components/featured.css">
+        <link rel="stylesheet" href="css/components/btn.css">
     </head>
     <body>
+        <!-- header.header>img.logo[src=img/logo-collabcode.png alt="Logo da CollabCode"]+nav>a.link*3 -->
         <header class="header">
             <img class="logo" src="img/logo-collabcode.png" alt="Logo da CollabCode">
 
-            <nav>
-                <a class="link" href="">Conteúdo</a><!--
-             --><a class="link" href="">Como funciona</a><!--
-             --><a class="link" href="">Contato</a>
+            <nav class="navigation">
+                <a class="action" href="conteudo.html">Conteúdo</a><!--
+             --><a class="action" href="">Como funciona</a><!--
+             --><a class="action" href="">Contato</a>
             </nav>
         </header>
 
-        
+        <section class="featured">
+            <h1 class="title">
+                <strong class="important">Curso de FrontEnd</strong> com boas práticas na twitch
+            </h1>
+        </section>
+
+        <!-- a.btn{Apoie} -->
+        <a href="https://apoia.se/collabcode" class="btn">Apoie</a>
     </body>
 </html>

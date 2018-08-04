@@ -1,0 +1,21 @@
+.btn {
+    display: block;
+    background-color: var(--primary-light);
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+    line-height: 50px;
+
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.6);
+    transition: background-color 200ms linear;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}

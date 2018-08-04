@@ -1,0 +1,18 @@
+.picture-component {
+    margin-bottom: 20px;
+}
+
+.picture-component > .picture {
+    float: left;
+}
+
+.picture-component > .subtitle {
+    font-size: 12px;
+    color: var(--dark);
+    text-align: center;
+    line-height: 14px;
+}
+
+.picture-component a {
+    color: inherit;
+}
