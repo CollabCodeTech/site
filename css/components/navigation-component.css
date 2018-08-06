@@ -3,6 +3,7 @@
 }
 
 .navigation-component .action {
+    display: block;
     color: var(--dark);
     font-size: 18px;
     text-decoration: none;
@@ -12,7 +13,6 @@
 }
 
 .navigation-component > .item.-active .action {
-    display: block;
     transform: translateX(12px)
 }
 
