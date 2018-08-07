@@ -1,0 +1,14 @@
+.carousel-light {
+    height: 166px;
+}
+
+.carousel-light > .item {
+    opacity: 0;
+    position: absolute;
+
+    transition: opacity 500ms linear;
+}
+
+.carousel-light > .item.-active {
+    opacity: 1;
+}

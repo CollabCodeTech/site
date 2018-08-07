@@ -3,5 +3,11 @@ body {
 }
 
 .-header {
+    box-sizing: border-box;
     padding-top: var(--header);
+}
+
+.-btn {
+    box-sizing: border-box;
+    padding-bottom: calc(var(--btn) + 20px);
 }

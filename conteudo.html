@@ -22,11 +22,12 @@
     <link rel="stylesheet" href="css/components/navigation.css">
     <link rel="stylesheet" href="css/components/featured.css">
     <link rel="stylesheet" href="css/components/btn.css">
+    <link rel="stylesheet" href="css/components/carousel-light.css">
     <link rel="stylesheet" href="css/components/picture-component.css">
     <link rel="stylesheet" href="css/components/navigation-component.css">
 </head>
 </head>
-<body class="-header">
+<body class="-header -btn">
     <header class="header">
         <a href="index.html">
             <img class="logo" src="img/logo-collabcode.png" alt="Logo da CollabCode">
@@ -39,39 +40,100 @@
         </nav>
     </header>
 
-    <section>
+    <section class="-btn">
         <!-- h1.title{O que será feito?} -->
         <h1 class="title">O que será feito?</h1>
 
-        <figure class="picture-component">
-            <img class="picture" src="http://via.placeholder.com/320x132" alt="Imagens dos componentes possivelmente será gifs">
-            <figcaption class="subtitle">
-                <a class="action" href="">click para acessar a demo</a>
-            </figcaption>
-        </figure>
+
+        <ol class="carousel-light">
+            <li class="item -active" id="botoes">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=0" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="action">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=1" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="headerFixo">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=2" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="botaoFixo">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=3" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="modal">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=4" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="carousel">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=5" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="tagging">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=6" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="item" id="mascara">
+                <figure class="picture-component">
+                    <img class="picture" src="https://picsum.photos/320/132/?image=7" alt="Imagens dos componentes possivelmente será gifs">
+                    <figcaption class="subtitle">
+                        <a class="action" href="">click para acessar a demo</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ol>
 
         <!-- ol.navigation-component>li.item*7>a.action -->
         <ol class="navigation-component">
             <li class="item -active">
-                <a href="" class="action">Botões</a>
+                <a href="#botoes" class="action">Botões</a>
             </li>
             <li class="item">
-                <a href="" class="action">Header fixo</a>
+                <a href="#headerFixo" class="action">Header fixo</a>
             </li>
             <li class="item">
-                <a href="" class="action">Botão fixo</a>
+                <a href="#botaoFixo" class="action">Botão fixo</a>
             </li>
             <li class="item">
-                <a href="" class="action">Modal / Alert Box</a>
+                <a href="#modal" class="action">Modal / Alert Box</a>
             </li>
             <li class="item">
-                <a href="" class="action">Carousel</a>
+                <a href="#carousel" class="action">Carousel</a>
             </li>
             <li class="item">
-                <a href="" class="action">Tagging</a>
+                <a href="#tagging" class="action">Tagging</a>
             </li>
             <li class="item">
-                <a href="" class="action">Máscara de formatação</a>
+                <a href="#mascara" class="action">Máscara de formatação</a>
             </li>
         </ol>
     </section>
